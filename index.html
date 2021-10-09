@@ -28,7 +28,7 @@
 
   <link rel="stylesheet" type="text/css" href="assets/css/virtual.css?version=9">
 
-  <link rel="stylesheet" type="text/css" href="assets/css/topbar.virtual.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/topbar.virtual.css?version=3">
 </head>
 <body class="theme-red">
 
@@ -103,11 +103,11 @@
       </div>
     </div>
     <div class="container py-5">
-      <h1 class="text-center fw-normal wow fadeIn">My Skills</h1>
+      <h1 class="text-center fw-normal wow fadeIn" id="m_skills">My Skills</h1>
       <div class="row py-3">
         <div class="col-md-6">
           <div class="px-lg-3">
-            <h4 class="wow fadeInUp">Coding skills</h4>
+            <h4 class="wow fadeInUp" id="m_codingSkills">Coding skills</h4>
             <div class="progress-wrapper wow fadeInUp">
               <span class="caption">C++</span>
               <div class="progress">
@@ -136,21 +136,21 @@
         </div>
         <div class="col-md-6">
           <div class="px-lg-3">
-            <h4 class="wow fadeInUp">Other Skills</h4>
+            <h4 class="wow fadeInUp" id="m_otherSkills">Other Skills</h4>
             <div class="progress-wrapper wow fadeInUp">
-              <span class="caption">French</span>
+              <span class="caption" id="m_french">French</span>
               <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Native</div>
+                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="m_frenchLevel">Native</div>
               </div>
             </div>
             <div class="progress-wrapper wow fadeInUp">
-              <span class="caption">English</span>
+              <span class="caption" id="m_english">English</span>
               <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 97%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Proficient (C1 - TOEIC 975/990)</div>
+                <div class="progress-bar" role="progressbar" style="width: 97%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="m_englishLevel">Proficient (C1 - TOEIC 975/990)</div>
               </div>
             </div>
             <div class="progress-wrapper wow fadeInUp">
-              <span class="caption">Confident with git and SCRUM practices</span>
+              <span class="caption" id="m_gitScrum">Confident with git and SCRUM practices</span>
             </div>
           </div>
         </div>
@@ -159,8 +159,8 @@
 
     <div class="vg-page page-service">
       <div class="container">
-        <h1 class="fw-normal text-center wow fadeInUp">What can i do?</h1>
-        <p class="text-center wow fadeInUp">Skills developed through internships and various personal and school projects</p>
+        <h1 class="fw-normal text-center wow fadeInUp" id="m_whatCanIDoTitle">What can i do?</h1>
+        <p class="text-center wow fadeInUp" id="m_whatCanIDoSubtitle">Skills developed through internships and various personal and school projects</p>
         <div class="row mt-5">
           <div class="col-md-6 col-lg-4 col-xl-3">
             <div class="card card-service wow fadeInUp">
@@ -168,8 +168,8 @@
                 <span class="ti-desktop"></span>
               </div>
               <div class="caption">
-                <h4 class="fg-theme">Software Development</h4>
-                <p>From software design to its implemetation</p>
+                <h4 class="fg-theme" id="m_SoftwareDev">Software Development</h4>
+                <p id="m_SoftwareDevDescription">From software design to its implemetation</p>
               </div>
             </div>
           </div>
@@ -179,8 +179,8 @@
                 <span class="ti-layout-accordion-list"></span>
               </div>
               <div class="caption">
-                <h4 class="fg-theme">Embedded Systems</h4>
-                <p>Concurrent programming </br>RTOS </br>Communication protocols (UART,SPI,I2C,CAN,CANopen)</p>
+                <h4 class="fg-theme" id="m_mbed">Embedded Systems</h4>
+                <p id="m_mbedDescription">Concurrent programming </br>RTOS </br>Communication protocols (UART,SPI,I2C,CAN,CANopen)</p>
               </div>
             </div>
           </div>
@@ -190,8 +190,8 @@
                 <span class="ti-cloud"></span>
               </div>
               <div class="caption">
-                <h4 class="fg-theme">Web Development</h4>
-                <p>Basics in Frontend and Backend</p>
+                <h4 class="fg-theme" id="m_webDev">Web Development</h4>
+                <p id="m_webDevDescription">Basics in Frontend and Backend</p>
               </div>
             </div>
           </div>
@@ -201,8 +201,8 @@
                 <span class="ti-vector"></span>
               </div>
               <div class="caption">
-                <h4 class="fg-theme">Artificial Intelligence</h4>
-                <p>Reinforcment Learning </br>Classification </br>Neural Networks</p>
+                <h4 class="fg-theme" id="m_AI">Artificial Intelligence</h4>
+                <p id="m_AIDescription">Reinforcment Learning </br>Classification </br>Neural Networks</p>
               </div>
             </div>
           </div>
@@ -213,59 +213,59 @@
     <div class="container pt-5">
       <div class="row">
         <div class="col-md-6 wow fadeInRight">
-          <h2 class="fw-normal">Education</h2>
+          <h2 class="fw-normal" id="m_education">Education</h2>
           <ul class="timeline mt-4 pr-md-5">
             <li>
               <div class="title">2016-2021</div>
               <div class="details">
-                <h5>Engineering degree in computer science</h5>
+                <h5 id="m_enibTitle">Engineering degree in computer science</h5>
                 <small class="fg-theme">Ecole Nationale d'Ingénieurs de Brest (ENIB) - <b>France</b></small>
-                <p>I learned software design and development, embedded systems, artificial intelligence and web programming through various projects. Team work and management were part of many of these projects, which is something I love. </br> Before specilizing in computer science for the last 3 years, I studied general engineering (automation, electronics and computer science). </p>
+                <p id="m_enibDescription">I learned software design and development, embedded systems, artificial intelligence and web programming through various projects. Team work and management were part of many of these projects, which is something I love. </br> Before specilizing in computer science for the last 3 years, I studied general engineering (automation, electronics and computer science). </p>
               </div>
             </li>
             <li>
               <div class="title">2021</div>
               <div class="details">
-                <h5>Master degree in computer science</h5>
+                <h5 id="m_uqacTitle">Master degree in computer science</h5>
                 <small class="fg-theme">Université du Québec à Chicoutimi (UQAC) - <b>Canada</b></small>
-                <p>Studying abroad is always a nice experience. I mostly studied AI and software design/development there. </p>
+                <p id="m_uqacDescription">Studying abroad is always a nice experience. I mostly studied AI and software design/development there. </p>
               </div>
             </li>
             <li>
               <div class="title">2019</div>
               <div class="details">
-                <h5>Management and entrepreneurship training</h5>
+                <h5 id="m_uboTitle">Management and entrepreneurship training</h5>
                 <small class="fg-theme">Université de Bretagne Occidentale (UBO) - <b>France</b></small>
-                <p>While I studied at ENIB, I decided to follow some training about management and entrepreneurship at the same time. My goal was to have a more comprehensive view about the way companies and projects work.</p>
+                <p id="m_uboDescription">While I studied at ENIB, I decided to follow some training about management and entrepreneurship at the same time. My goal was to have a more comprehensive view about the way companies and projects work.</p>
               </div>
             </li>
             <li>
-              <div class="title">Aug-Dec 2018</div>
+              <div class="title" id="m_udesDate">Aug-Dec 2018</div>
               <div class="details">
-                <h5>Semester in computer science</h5>
+                <h5 id="m_udesTitle">Semester in computer science</h5>
                 <small class="fg-theme">Université du Québec à Chicoutimi (UQAC) - <b>Canada</b></small>
-                <p>My first experience studying computer science abroad. That was mostly learning about embedded systems through team projects.</p>
+                <p id="m_udesDescription">My first experience studying computer science abroad. That was mostly learning about embedded systems through team projects.</p>
               </div>
             </li>
           </ul>
         </div>
         <div class="col-md-6 wow fadeInRight" data-wow-delay="200ms">
-          <h2 class="fw-normal">Experience</h2>
+          <h2 class="fw-normal" id="m_experience">Experience</h2>
           <ul class="timeline mt-4 pr-md-5">
             <li>
-              <div class="title">Mar-Jul 2020</div>
+              <div class="title" id="m_orokDate">Mar-Jul 2020</div>
               <div class="details">
-                <h5>Embedded systems and software development</h5>
+                <h5 id="m_orokTitle">Embedded systems and software development</h5>
                 <small class="fg-theme">OROK - <b>Lyon, France</b></small>
-                <p>Working on an Autonomous Ground Vehicle (AGV) that transports luggage in airports. </br> - Add new devices to the system (sensors, controller...)</br> - Configure them so that they can communicate with the system (via CANopen)</br> - Send and receive data from the software and process it </br> - Design software architecture </br> - Software development</br> - SCRUM management</p>
+                <p id="m_orokDescription">Working on an Autonomous Ground Vehicle (AGV) that transports luggage in airports. </br> - Add new devices to the system (sensors, controller...)</br> - Configure them so that they can communicate with the system (via CANopen)</br> - Send and receive data from the software and process it </br> - Design software architecture </br> - Software development</br> - SCRUM management</p>
               </div>
             </li>
             <li>
-              <div class="title">Jun-Aug 2019</div>
+              <div class="title" id="m_ifsttarDate">Jun-Aug 2019</div>
               <div class="details">
-                <h5>Software development</h5>
+                <h5 id="m_ifsttarTitle">Software development</h5>
                 <small class="fg-theme">IFSTTAR - <b>Nantes, France</b></small>
-                <p>Development on QT of a software used to design roads and calculate their dimensions.</br> - Back-End development using C++</br> - Front-End development using QML and JavaScript</br> - Design and execution of functional tests </br> - Agile software development</p>
+                <p id="m_ifsttarDescription">Development on QT of a software used to design roads and calculate their dimensions.</br> - Back-End development using C++</br> - Front-End development using QML and JavaScript</br> - Design and execution of functional tests </br> - Agile software development</p>
               </div>
             </li>
           </ul>
@@ -283,16 +283,16 @@
       <div class="text-center wow fadeInUp">
         <div class="badge badge-subhead">Portfolio</div>
       </div>
-      <h1 class="text-center fw-normal wow fadeInUp">Have a look at my main projects</h1>
+      <h1 class="text-center fw-normal wow fadeInUp" id="m_projects">Have a look at my main projects</h1>
       <div class="filterable-button py-3 wow fadeInUp" data-toggle="selected">
-        <button class="btn btn-theme-outline selected" data-filter="*">All</button>
-        <button class="btn btn-theme-outline" data-filter=".software">Software</button>
-        <button class="btn btn-theme-outline" data-filter=".web">Web app</button>
-        <button class="btn btn-theme-outline" data-filter=".embedded">Embedded systems</button>
-        <button class="btn btn-theme-outline" data-filter=".mobile">Mobile app</button>
+        <button class="btn btn-theme-outline selected" data-filter="*" id="m_all">All</button>
+        <button class="btn btn-theme-outline" data-filter=".software" id="m_software">Software</button>
+        <button class="btn btn-theme-outline" data-filter=".web" id="m_webApp">Web app</button>
+        <button class="btn btn-theme-outline" data-filter=".embedded" id="m_mbedSystems">Embedded systems</button>
+        <button class="btn btn-theme-outline" data-filter=".mobile" id="m_mobileApp">Mobile app</button>
         <button class="btn btn-theme-outline" data-filter=".sport">Sport</button>
-        <button class="btn btn-theme-outline" data-filter=".perso">Personal Project</button>
-        <button class="btn btn-theme-outline" data-filter=".school">School Project</button>
+        <button class="btn btn-theme-outline" data-filter=".perso" id="m_personalProject">Personal Project</button>
+        <button class="btn btn-theme-outline" data-filter=".school" id="m_schoolProject">School Project</button>
       </div>
 
       <div class="gridder my-3">
@@ -301,7 +301,7 @@
             <img src="assets/img/work/biken.png" alt="">
             <div class="img-caption">
               <h5 class="fg-theme">Biken</h5>
-              <p>Biken is an app designed to help cyclists plan their sunday ride. They tell the app what they want (starting point, distance ...) and it generates a route for them.</p>
+              <p id="m_biken">Biken is an app designed to help cyclists plan their sunday ride. They tell the app what they want (starting point, distance ...) and it generates a route for them.</p>
             </div>
           </div>
         </div>
@@ -310,7 +310,7 @@
             <img src="assets/img/work/mummycase.png" alt="">
             <div class="img-caption">
               <h5 class="fg-theme">Mummy case</h5>
-              <p>Mummy case is an online multiplayer 3D plateformer we developed with some friends during a Gamejam.</p>
+              <p id="m_mummyCase">Mummy case is an online multiplayer 3D plateformer we developed with some friends during a Gamejam.</p>
             </div>
           </div>
         </div>
@@ -319,7 +319,7 @@
             <img src="assets/img/work/spotifyStats.png" alt="">
             <div class="img-caption">
               <h5 class="fg-theme">Spotify Stats</h5>
-              <p>This website allows anyone to connect his Spotify account to see some statistics about his profile.</p>
+              <p id="m_spotifyStats">This website allows anyone to connect his Spotify account to see some statistics about his profile.</p>
             </div>
           </div>
         </div>
@@ -328,7 +328,7 @@
             <img src="assets/img/work/Mucorelais.png" alt="">
             <div class="img-caption">
               <h5 class="fg-theme">Muco Relais</h5>
-              <p>Muco Relais is a race we organized with a bunch of friends in order to raise funds for a charity "Vaincre la Mucoviscidose". This is definetly one of the project I'm the most proud of.</p>
+              <p id="m_mucoRelais">Muco Relais is a race we organized with a bunch of friends in order to raise funds for a charity "Vaincre la Mucoviscidose". This is definetly one of the project I'm the most proud of.</p>
             </div>
           </div>
         </div>
@@ -337,7 +337,7 @@
             <img src="assets/img/work/Vocabulometer.png" alt="">
             <div class="img-caption">
               <h5 class="fg-theme">Vocabulometer</h5>
-              <p>Vocabulometer is an app developed by the University of Osaka (Japan) that aims to help Japanese learn english vocabulary. I took part in this project for a few months and added some features. This was a very interesting opportunity.</p>
+              <p id="m_vocabulometer">Vocabulometer is an app developed by the University of Osaka (Japan) that aims to help Japanese learn english vocabulary. I took part in this project for a few months and added some features. This was a very interesting opportunity.</p>
             </div>
           </div>
         </div>
@@ -345,16 +345,16 @@
           <div class="img-place" data-src="assets/img/work/GTA.png" data-fancybox data-caption="<h5 class='fg-theme'>Automated traffic management</h5> <p>A way to have a better, clearer traffic light management</p>">
             <img src="assets/img/work/GTA.png" alt="">
             <div class="img-caption">
-              <h5 class="fg-theme">Automated traffic management</h5>
-              <p>The goal of this project was to create a simple and safe automated traffic management, using concurrent programming. </p>
+              <h5 class="fg-theme" id="m_gtaTitle">Automated traffic management</h5>
+              <p id="m_gta">The goal of this project was to create a simple and safe automated traffic management, using concurrent programming. </p>
             </div>
           </div>
         </div>
 
       </div> <!-- End gridder -->
       <div class="text-center wow fadeInUp">
-        <a href="https://github.com/leomerel" class="btn btn-theme" target="_blank">View More</a>
-        <a href="https://www.youtube.com/channel/UCvrIOAiDfKthuXXx8gj7omQ" class="btn btn-theme" target="_blank">View Demos</a>
+        <a href="https://github.com/leomerel" class="btn btn-theme" target="_blank" id="m_viewMore">View More</a>
+        <a href="https://www.youtube.com/channel/UCvrIOAiDfKthuXXx8gj7omQ" class="btn btn-theme" target="_blank" id="m_viewDemos">View Demos</a>
       </div>
     </div>
   </div> <!-- End Portfolio page -->
@@ -365,25 +365,25 @@
       <div class="row">
         <div class="col-lg-4 py-3">
           <div class="footer-info">
-            <p>Where to find me</p>
+            <p id="m_adress">Where to find me</p>
             <hr class="divider">
             <p class="fs-large fg-white">8 rue Jean-Pierre Texier<br/> 35220 Châteaubourg (France)</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-3 py-3">
           <div class="float-lg-right">
-            <p>My links</p>
+            <p id="m_links">My links</p>
             <hr class="divider">
             <ul class="list-unstyled">
               <li><a href="https://github.com/leomerel" target="_blank">Github</a></li>
               <li><a href="https://www.linkedin.com/in/leo-merel" target="_blank">Linkedin</a></li>
-              <li><a href="https://www.youtube.com/channel/UCvrIOAiDfKthuXXx8gj7omQ" target="_blank">Youtube (project demos)</a></li>
+              <li><a href="https://www.youtube.com/channel/UCvrIOAiDfKthuXXx8gj7omQ" target="_blank" id="m_youtube">Youtube (project demos)</a></li>
             </ul>
           </div>
         </div>
         <div class="col-md-6 col-lg-3 py-3">
           <div class="float-lg-right">
-            <p>Contact me</p>
+            <p id="m_contactMe">Contact me</p>
             <hr class="divider">
             <ul class="list-unstyled">
               <li>leo.merel@outlook.fr</li>
@@ -394,7 +394,7 @@
       </div>
       <div class="row justify-content-center mt-3">
         <div class="col-12">
-          <p class="text-center mb-0 mt-4">Made by Léo Mérel, based on <a href="https://www.macodeid.com/">MACode ID</a>'s template.</p>
+          <p class="text-center mb-0 mt-4" id="m_credits">Made by Léo Mérel, based on <a href="https://www.macodeid.com/">MACode ID</a>'s template.</p>
         </div>
       </div>
     </div>
@@ -452,8 +452,64 @@
       aboutMeTitle: "About me",
       aboutMe: "I'm a computer science student, curious about new technologies and keen to develop new apps. I like to join new teams and help them in their projects. <br/>I'm currently <b>looking for an internship</b> starting on <b>January 2022</b> (5-6 months duration).",
       from: "<b>From:</b> Bretagne, France",
-      phoneNumber: "<b>Phone number:</b> (+33) 6 38 22 07 98"
-
+      phoneNumber: "<b>Phone number:</b> (+33) 6 38 22 07 98",
+      skills: "My skills",
+      codingSkills: "Coding skills",
+      otherSkills: "Other skills",
+      french: "French",
+      frenchLevel: "native",
+      english: "English",
+      englishLevel: "Proficient (C1 - TOEIC 975/990)",
+      gitScrum: "Confident with git and SCRUM practices",
+      whatCanIDoTitle: "What can i do?",
+      whatCanIDoSubtitle: "Skills developed through internships and various personal and school projects",
+      softwareDev: "Software Development",
+      softwareDevDescription: "From software design to its implemetation",
+      mbed: "Embedded Systems",
+      mbedDescription: "Concurrent programming </br>RTOS </br>Communication protocols (UART,SPI,I2C,CAN,CANopen)",
+      webDev: "Web Development",
+      webDevDescription: "Basics in Frontend and Backend",
+      ai: "Artificial Intelligence",
+      aiDescription: "Reinforcment Learning </br>Classification </br>Neural Networks",
+      education: "Education",
+      enibTitle: "Engineering degree in computer science",
+      enibDescription: "I learned software design and development, embedded systems, artificial intelligence and web programming through various projects. Team work and management were part of many of these projects, which is something I love. </br> Before specilizing in computer science for the last 3 years, I studied general engineering (automation, electronics and computer science).",
+      uqacTitle: "Master degree in computer science",
+      uqacDescription: "Studying abroad is always a nice experience. I mostly studied AI and software design/development there.",
+      uboTitle: "Management and entrepreneurship training",
+      uboDescription: "While I studied at ENIB, I decided to follow some training about management and entrepreneurship at the same time. My goal was to have a more comprehensive view about the way companies and projects work.",
+      udesDate: "Aug-Dec 2018",
+      udesTitle: "Semester in computer science",
+      udesDescription: "My first experience studying computer science abroad. That was mostly learning about embedded systems through team projects.",
+      experience: "Experience",
+      orokDate: "Mar-Jul 2020",
+      orokTitle: "Embedded systems and software development",
+      orokDescription: "Working on an Autonomous Ground Vehicle (AGV) that transports luggage in airports. </br> - Add new devices to the system (sensors, controller...)</br> - Configure them so that they can communicate with the system (via CANopen)</br> - Send and receive data from the software and process it </br> - Design software architecture </br> - Software development</br> - SCRUM management",
+      ifsttarDate: "Jun-Aug 2019",
+      ifsttarTitle: "Software development",
+      ifsttarDescription: "Development on QT of a software used to design roads and calculate their dimensions.</br> - Back-End development using C++</br> - Front-End development using QML and JavaScript</br> - Design and execution of functional tests </br> - Agile software development",
+      projects: "Have a look at my main projects",
+      all: "All",
+      software: "Software",
+      webApp: "Web app",
+      mbedSystems: "Embedded systems",
+      mobileApp: "Mobile app",
+      personalProject: "Personal Project",
+      schoolProject: "School Project",
+      biken:"Biken is an app designed to help cyclists plan their sunday ride. They tell the app what they want (starting point, distance ...) and it generates a route for them.",
+      mummyCase:"Mummy case is an online multiplayer 3D plateformer we developed with some friends during a Gamejam.",
+      spotifyStats:"This website allows anyone to connect his Spotify account to see some statistics about his profile.",
+      mucoRelais:'Muco Relais is a race we organized with a bunch of friends in order to raise funds for a charity "Vaincre la Mucoviscidose". This is definetly one of the project I\'m the most proud of.',
+      vocabulometer:"Vocabulometer is an app developed by the University of Osaka (Japan) that aims to help Japanese learn english vocabulary. I took part in this project for a few months and added some features. This was a very interesting opportunity.",
+      gtaTitle: "Automated traffic management",
+      gta:"The goal of this project was to create a simple and safe automated traffic management, using concurrent programming.",
+      viewMore: "View more",
+      viewDemos: "View demos",
+      adress: "Where to find me",
+      links: "My links",
+      youtube: "Youtube (project demos)",
+      contactMe: "Contact me",
+      credits: 'Made by Léo Mérel, based on <a href="https://www.macodeid.com/">MACode ID</a>\'s template.'
     },
     fr: {
       home: "Accueil",
@@ -466,7 +522,64 @@
       aboutMeTitle: "A propos de moi",
       aboutMe: "D’un naturel curieux, j’aime découvrir de nouvelles technologies et développer des projets personnels. Je suis rigoureux, volontaire et le travail en équipe est quelque chose que j’apprécie tout particulièrement.<br/><br/>Je suis actuellement à la <b>recherche d'un stage de fin d'études</b>, à partir de <b>Janvier 2022</b> et pour une durée de 5 ou 6 mois.",
       from: "<b>De:</b> Bretagne, France",
-      phoneNumber: "<b>Téléphone:</b> (+33) 6 38 22 07 98"
+      phoneNumber: "<b>Téléphone:</b> (+33) 6 38 22 07 98",
+      skills: "Compétences",
+      codingSkills: "Programmation",
+      otherSkills: "Autres",
+      french: "Français",
+      frenchLevel: "Natif",
+      english: "Anglais",
+      englishLevel: "Courant (C1 - TOEIC 975/990)",
+      gitScrum: "A l'aise avec la méthode SCRUM et l'utilisation de git",
+      whatCanIDoTitle: "Savoir-faire",
+      whatCanIDoSubtitle: "Compétences développées lors de stages et de projets personnels et scolaires",
+      softwareDev: "Développement logiciel",
+      softwareDevDescription: "De la conception de logiciels à leur développement",
+      mbed: "Systèmes embarqués",
+      mbedDescription: "Programmation concurrente </br>RTOS </br>Protocoles de communication (UART,SPI,I2C,CAN,CANopen)",
+      webDev: "Développement web",
+      webDevDescription: "Bases en Frontend et Backend",
+      ai: "Intelligence Artificielle",
+      aiDescription: "Apprentissage par renforcement </br>Classification </br>Réseaux de neurones",
+      education: "Education",
+      enibTitle: "Formation d'ingénieur en informatique",
+      enibDescription: "Formation d'ingénieur en spécialité informatique : développement de logiciels, systèmes embarqués, IA et développement web. J'y ai développé mes compétences lors de nombreux projets, dans lesquels le travail en équipe et la gestion étaient fortement présents.</br>Avant de me spécialiser en informatique les 3 dernières années, j'ai suivi une prépa intégrée généraliste (informatique, automatismes, électronique).",
+      uqacTitle: "Master en informatique (Double diplôme)",
+      uqacDescription: "Etudier à l'étranger est toujours une expérience incroyable. Lors de cette maitrise, j'ai principalement étudié l'intelligence artificielle et la conception/développement de logiciels.",
+      uboTitle: "Formation en management et entrepreneuriat",
+      uboDescription: "J'ai décidé de suivre cette formation en parallèle de ma formation à l'ENIB afin d’avoir une vision plus globale des projets et des entreprises.",
+      udesDate: "Août-Dec 2018",
+      udesTitle: "Semestre en informatique embarqué",
+      udesDescription: "Cette expérience a été la première fois que j'ai suivi des cours à l'étranger pendant mon cursus ingénieur. J'y ai principalement étudié l'informatique embarquée.",
+      experience: "Expérience",
+      orokDate: "Mars-Juil 2020",
+      orokTitle: "Systèmes embarqués et développement logiciel",
+      orokDescription: "Intégration d’équipements embarqués dans un véhicule autonome (AGV) déstiné à transporter les bagages en aéroport.</br> -	Gestion de la communication (via CANopen) entre tous les éléments du système</br> -	Envoi, réception et traitement des données dans le logiciel (en C++)</br> -	Réflexion sur l’architecture du logiciel </br> - Développement du logiciel</br> -	Gestion de projet SCRUM",
+      ifsttarDate: "Juin-Août 2019",
+      ifsttarTitle: "Développement logiciel",
+      ifsttarDescription: "Développement d’un logiciel de dimensionnement de chaussée sur Qt.</br> -	Développement backend (C++) </br> - Développement frontend (QML, JavaScript)</br> -	Conception et exécution de tests fonctionnels</br> - Gestion de projet agile",
+      projects: "Jetez un oeil aux projets que j'ai développés",
+      all: "Tous",
+      software: "Logiciel",
+      webApp: "Web",
+      mbedSystems: "Embarqué",
+      mobileApp: "Mobile",
+      personalProject: "Projets personnels",
+      schoolProject: "Projets scolaires",
+      biken:"Biken est une application permettant aux cyclistes de planifier leurs sorties. Il rentre ses critères (départ, distance...) et Biken génère une boucle pour lui.",
+      mummyCase:"Mummy Case est un jeu de plateforme multijoueur en ligne, et en 3D. Il est le résultat d'une GameJam. ",
+      spotifyStats:"Ce site permet à n'importe quel utilisateur de se connecter avec son compte Spotify afin de voir des stats sur les musiques qu'il écoute.",
+      mucoRelais:'Le Muco Relais est une course à pied caritative organisée avec des amis coureurs en partenariat avec l\'association "Vaincre la Mucoviscidose". C\'est un des projets dont je suis le plus fier.' ,
+      vocabulometer:"Vocabulometer est une application développée par l'Université d'Osaka pour aider les japonais à apprendre du vocabulaire anglais. J'ai eu la chance de prendre de part à ce projet, qui a été une expérience très enrichissante.",
+      gtaTitle: "Gestion de trafic autonome",
+      gta:"Le but de ce projet était de créer un système autonome de gestion de feux routier à la fois simple et sûr, en utilisant la programmation concurrente.",
+      viewMore: "Voir plus",
+      viewDemos: "Voir les démos",
+      adress: "Adresse",
+      links: "Liens",
+      youtube: "Youtube (Démos de projets)",
+      contactMe: "Contacts",
+      credits: 'Site réalisé par Léo Mérel, basé sur un template de<a href="https://www.macodeid.com/">MACode ID</a>.'
     }
   };
 
@@ -496,6 +609,63 @@
       m_aboutMe.innerHTML = language.eng.aboutMe;
       m_from.innerHTML = language.eng.from;
       m_phoneNumber.innerHTML = language.eng.phoneNumber;
+      m_skills.innerHTML = language.eng.skills;
+      m_codingSkills.innerHTML = language.eng.codingSkills;
+      m_otherSkills.innerHTML = language.eng.otherSkills;
+      m_french.innerHTML = language.eng.french;
+      m_frenchLevel.innerHTML = language.eng.frenchLevel;
+      m_english.innerHTML = language.eng.english;
+      m_englishLevel.innerHTML = language.eng.englishLevel;
+      m_gitScrum.innerHTML = language.eng.gitScrum;
+      m_whatCanIDoTitle.innerHTML = language.eng.whatCanIDoTitle;
+      m_whatCanIDoSubtitle.innerHTML = language.eng.whatCanIDoSubtitle;
+      m_SoftwareDev.innerHTML = language.eng.softwareDev;
+      m_SoftwareDevDescription.innerHTML = language.eng.softwareDevDescription;
+      m_mbed.innerHTML = language.eng.mbed;
+      m_mbedDescription.innerHTML = language.eng.mbedDescription;
+      m_webDev.innerHTML = language.eng.webDev;
+      m_webDevDescription.innerHTML = language.eng.webDevDescription;
+      m_AI.innerHTML = language.eng.ai;
+      m_AIDescription.innerHTML = language.eng.aiDescription;
+      m_education.innerHTML = language.eng.education;
+      m_enibTitle.innerHTML = language.eng.enibTitle;
+      m_enibDescription.innerHTML = language.eng.enibDescription;
+      m_uqacTitle.innerHTML = language.eng.uqacTitle;
+      m_uqacDescription.innerHTML = language.eng.uqacDescription;
+      m_uboTitle.innerHTML = language.eng.uboTitle;
+      m_uboDescription.innerHTML = language.eng.uboDescription;
+      m_udesDate.innerHTML = language.eng.udesDate;
+      m_udesTitle.innerHTML = language.eng.udesTitle;
+      m_udesDescription.innerHTML = language.eng.udesDescription;
+      m_experience.innerHTML = language.eng.experience;
+      m_orokDate.innerHTML = language.eng.orokDate;
+      m_orokTitle.innerHTML = language.eng.orokTitle;
+      m_orokDescription.innerHTML = language.eng.orokDescription;
+      m_ifsttarDate.innerHTML = language.eng.ifsttarDate;
+      m_ifsttarTitle.innerHTML = language.eng.ifsttarTitle;
+      m_ifsttarDescription.innerHTML = language.eng.ifsttarDescription;
+      m_projects.innerHTML = language.eng.projects;
+      m_all.innerHTML = language.eng.all;
+      m_software.innerHTML = language.eng.software;
+      m_webApp.innerHTML = language.eng.webApp;
+      m_mbedSystems.innerHTML = language.eng.mbedSystems;
+      m_mobileApp.innerHTML = language.eng.mobileApp;
+      m_personalProject.innerHTML = language.eng.personalProject;
+      m_schoolProject.innerHTML = language.eng.schoolProject;
+      m_biken.innerHTML = language.eng.biken;
+      m_mummyCase.innerHTML = language.eng.mummyCase;
+      m_spotifyStats.innerHTML = language.eng.spotifyStats;
+      m_mucoRelais.innerHTML = language.eng.mucoRelais;
+      m_vocabulometer.innerHTML = language.eng.vocabulometer;
+      m_gta.innerHTML = language.eng.gta;
+      m_gtaTitle.innerHTML = language.eng.gtaTitle;
+      m_viewMore.innerHTML = language.eng.viewMore;
+      m_viewDemos.innerHTML = language.eng.viewDemos;
+      m_adress.innerHTML = language.eng.adress;
+      m_links.innerHTML = language.eng.links;
+      m_youtube.innerHTML = language.eng.youtube;
+      m_contactMe.innerHTML = language.eng.contactMe;
+      m_credits.innerHTML = language.eng.credits;
     }
 
     function fr() {
@@ -510,6 +680,63 @@
       m_aboutMe.innerHTML = language.fr.aboutMe;
       m_from.innerHTML = language.fr.from;
       m_phoneNumber.innerHTML = language.fr.phoneNumber;
+      m_skills.innerHTML = language.fr.skills;
+      m_codingSkills.innerHTML = language.fr.codingSkills;
+      m_otherSkills.innerHTML = language.fr.otherSkills;
+      m_french.innerHTML = language.fr.french;
+      m_frenchLevel.innerHTML = language.fr.frenchLevel;
+      m_english.innerHTML = language.fr.english;
+      m_englishLevel.innerHTML = language.fr.englishLevel;
+      m_gitScrum.innerHTML = language.fr.gitScrum;
+      m_whatCanIDoTitle.innerHTML = language.fr.whatCanIDoTitle;
+      m_whatCanIDoSubtitle.innerHTML = language.fr.whatCanIDoSubtitle;
+      m_SoftwareDev.innerHTML = language.fr.softwareDev;
+      m_SoftwareDevDescription.innerHTML = language.fr.softwareDevDescription;
+      m_mbed.innerHTML = language.fr.mbed;
+      m_mbedDescription.innerHTML = language.fr.mbedDescription;
+      m_webDev.innerHTML = language.fr.webDev;
+      m_webDevDescription.innerHTML = language.fr.webDevDescription;
+      m_AI.innerHTML = language.fr.ai;
+      m_AIDescription.innerHTML = language.fr.aiDescription;
+      m_education.innerHTML = language.fr.education;
+      m_enibTitle.innerHTML = language.fr.enibTitle;
+      m_enibDescription.innerHTML = language.fr.enibDescription;
+      m_uqacTitle.innerHTML = language.fr.uqacTitle;
+      m_uqacDescription.innerHTML = language.fr.uqacDescription;
+      m_uboTitle.innerHTML = language.fr.uboTitle;
+      m_uboDescription.innerHTML = language.fr.uboDescription;
+      m_udesDate.innerHTML = language.fr.udesDate;
+      m_udesTitle.innerHTML = language.fr.udesTitle;
+      m_udesDescription.innerHTML = language.fr.udesDescription;
+      m_experience.innerHTML = language.fr.experience;
+      m_orokDate.innerHTML = language.fr.orokDate;
+      m_orokTitle.innerHTML = language.fr.orokTitle;
+      m_orokDescription.innerHTML = language.fr.orokDescription;
+      m_ifsttarDate.innerHTML = language.fr.ifsttarDate;
+      m_ifsttarTitle.innerHTML = language.fr.ifsttarTitle;
+      m_ifsttarDescription.innerHTML = language.fr.ifsttarDescription;
+      m_projects.innerHTML = language.fr.projects;
+      m_all.innerHTML = language.fr.all;
+      m_software.innerHTML = language.fr.software;
+      m_webApp.innerHTML = language.fr.webApp;
+      m_mbedSystems.innerHTML = language.fr.mbedSystems;
+      m_mobileApp.innerHTML = language.fr.mobileApp;
+      m_personalProject.innerHTML = language.fr.personalProject;
+      m_schoolProject.innerHTML = language.fr.schoolProject;
+      m_biken.innerHTML = language.fr.biken;
+      m_mummyCase.innerHTML = language.fr.mummyCase;
+      m_spotifyStats.innerHTML = language.fr.spotifyStats;
+      m_mucoRelais.innerHTML = language.fr.mucoRelais;
+      m_vocabulometer.innerHTML = language.fr.vocabulometer;
+      m_gta.innerHTML = language.fr.gta;
+      m_gtaTitle.innerHTML = language.fr.gtaTitle;
+      m_viewMore.innerHTML = language.fr.viewMore;
+      m_viewDemos.innerHTML = language.fr.viewDemos;
+      m_adress.innerHTML = language.fr.adress;
+      m_links.innerHTML = language.fr.links;
+      m_youtube.innerHTML = language.fr.youtube;
+      m_contactMe.innerHTML = language.fr.contactMe;
+      m_credits.innerHTML = language.fr.credits;
     }
   </script>
 </body>
