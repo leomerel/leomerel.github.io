@@ -277,7 +277,7 @@
   <!-- Hobbies -->
   <div class="vg-page page-funfact" style="background-image: url(assets/img/bg_banner.jpg);">
     <div class="container">
-      <h1 class="text-center fw-normal wow fadeIn">My hobbies</h1>
+      <h1 class="text-center fw-normal wow fadeIn" id="m_hobbies">My hobbies</h1>
       <div class="row">
         <div class="col-md-6 col-lg-4 col-xl-3 item">
           <div class="img-place wow fadeInUp">
@@ -313,9 +313,9 @@
       <div class="filterable-button py-3 wow fadeInUp" data-toggle="selected">
         <button class="btn btn-theme-outline selected" data-filter="*" id="m_all">All</button>
         <button class="btn btn-theme-outline" data-filter=".software" id="m_software">Software</button>
-        <button class="btn btn-theme-outline" data-filter=".web" id="m_webApp">Web app</button>
+        <button class="btn btn-theme-outline" data-filter=".web" id="m_webApp">Web</button>
         <button class="btn btn-theme-outline" data-filter=".embedded" id="m_mbedSystems">Embedded systems</button>
-        <button class="btn btn-theme-outline" data-filter=".mobile" id="m_mobileApp">Mobile app</button>
+        <button class="btn btn-theme-outline" data-filter=".mobile" id="m_mobileApp">Mobile</button>
         <button class="btn btn-theme-outline" data-filter=".sport">Sport</button>
         <button class="btn btn-theme-outline" data-filter=".perso" id="m_personalProject">Personal Project</button>
         <button class="btn btn-theme-outline" data-filter=".school" id="m_schoolProject">School Project</button>
@@ -323,7 +323,7 @@
 
       <div class="gridder my-3">
         <div class="grid-item software sport school perso wow zoomIn">
-          <div class="img-place" data-src="assets/img/work/biken.png" data-fancybox data-caption="<h5 class='fg-theme'>Biken</h5> <p>Bike route maker app</p>">
+          <div class="img-place" data-src="assets/img/work/biken.png" data-fancybox data-caption="<h5 class='fg-theme'>Biken</h5> <p></p>">
             <img src="assets/img/work/biken.png" alt="">
             <div class="img-caption">
               <h5 class="fg-theme">Biken</h5>
@@ -332,7 +332,7 @@
           </div>
         </div>
         <div class="grid-item perso software wow zoomIn">
-          <div class="img-place" data-src="assets/img/work/mummycase2.png" data-fancybox data-caption="<h5 class='fg-theme'>Mummy Case</h5> <p>Our Gamejam 2020 game</p>">
+          <div class="img-place" data-src="assets/img/work/mummycase2.png" data-fancybox data-caption="<h5 class='fg-theme'>Mummy Case</h5> <p></p>">
             <img src="assets/img/work/mummycase.png" alt="">
             <div class="img-caption">
               <h5 class="fg-theme">Mummy case</h5>
@@ -341,7 +341,7 @@
           </div>
         </div>
         <div class="grid-item perso web wow zoomIn">
-          <div class="img-place" data-src="assets/img/work/spotifyStats.png" data-fancybox data-caption="<h5 class='fg-theme'>Spotify Stats</h5> <p>Website displaying personnal spotify statistics</p>">
+          <div class="img-place" data-src="assets/img/work/spotifyStats.png" data-fancybox data-caption="<h5 class='fg-theme'>Spotify Stats</h5> <p></p>">
             <img src="assets/img/work/spotifyStats.png" alt="">
             <div class="img-caption">
               <h5 class="fg-theme">Spotify Stats</h5>
@@ -350,7 +350,7 @@
           </div>
         </div>
         <div class="grid-item school perso sport wow zoomIn">
-          <div class="img-place" data-src="assets/img/work/Mucorelais.png" data-fancybox data-caption="<h5 class='fg-theme'>Muco Relais</h5> <p>Race to collect funds for a charity</p>">
+          <div class="img-place" data-src="assets/img/work/Mucorelais.png" data-fancybox data-caption="<h5 class='fg-theme'>Muco Relais</h5> <p></p>">
             <img src="assets/img/work/Mucorelais.png" alt="">
             <div class="img-caption">
               <h5 class="fg-theme">Muco Relais</h5>
@@ -359,7 +359,7 @@
           </div>
         </div>
         <div class="grid-item school web mobile wow zoomIn">
-          <div class="img-place" data-src="assets/img/work/Vocabulometer.png" data-fancybox data-caption="<h5 class='fg-theme'>Vocabulometer</h5> <p>App to help learning english vocabulary</p>">
+          <div class="img-place" data-src="assets/img/work/Vocabulometer.png" data-fancybox data-caption="<h5 class='fg-theme'>Vocabulometer</h5> <p></p>">
             <img src="assets/img/work/Vocabulometer.png" alt="">
             <div class="img-caption">
               <h5 class="fg-theme">Vocabulometer</h5>
@@ -367,8 +367,8 @@
             </div>
           </div>
         </div>
-        <div class="grid-item school embedded wow zoomIn">
-          <div class="img-place" data-src="assets/img/work/GTA.png" data-fancybox data-caption="<h5 class='fg-theme'>Automated traffic management</h5> <p>A way to have a better, clearer traffic light management</p>">
+        <div class="grid-item school embedded mobile wow zoomIn">
+          <div class="img-place" data-src="assets/img/work/GTA.png" data-fancybox data-caption="<h5 class='fg-theme'>Automated traffic management</h5> <p></p>">
             <img src="assets/img/work/GTA.png" alt="">
             <div class="img-caption">
               <h5 class="fg-theme" id="m_gtaTitle">Automated traffic management</h5>
@@ -514,12 +514,13 @@
       ifsttarDate: "Jun-Aug 2019",
       ifsttarTitle: "Software development",
       ifsttarDescription: "Development on QT of a software used to design roads and calculate their dimensions.</br> - Back-End development using C++</br> - Front-End development using QML and JavaScript</br> - Design and execution of functional tests </br> - Agile software development",
+      hobbies: "My hobbies",
       projects: "Have a look at my main projects",
       all: "All",
       software: "Software",
-      webApp: "Web app",
+      webApp: "Web",
       mbedSystems: "Embedded systems",
-      mobileApp: "Mobile app",
+      mobileApp: "Mobile",
       personalProject: "Personal Project",
       schoolProject: "School Project",
       biken:"Biken is an app designed to help cyclists plan their sunday ride. They tell the app what they want (starting point, distance ...) and it generates a route for them.",
@@ -584,6 +585,7 @@
       ifsttarDate: "Juin-Août 2019",
       ifsttarTitle: "Développement logiciel",
       ifsttarDescription: "Développement d’un logiciel de dimensionnement de chaussée sur Qt.</br> -	Développement backend (C++) </br> - Développement frontend (QML, JavaScript)</br> -	Conception et exécution de tests fonctionnels</br> - Gestion de projet agile",
+      hobbies: "Centres d'intérêt",
       projects: "Jetez un oeil aux projets que j'ai développés",
       all: "Tous",
       software: "Logiciel",
@@ -613,12 +615,12 @@
       var btn = document.getElementById("btn_switchLanguage");
       if(btn.value=="en") {
           btn.value="fr";
-          btn.innerHTML = 'Fr';
+          btn.innerHTML = 'En';
           fr();
       }
       else if(btn.value=="fr") {
         btn.value="en";
-        btn.innerHTML = 'En';
+        btn.innerHTML = 'Fr';
           en();
       }
     }
@@ -670,6 +672,7 @@
       m_ifsttarDate.innerHTML = language.eng.ifsttarDate;
       m_ifsttarTitle.innerHTML = language.eng.ifsttarTitle;
       m_ifsttarDescription.innerHTML = language.eng.ifsttarDescription;
+      m_hobbies.innerHTML = language.eng.hobbies;
       m_projects.innerHTML = language.eng.projects;
       m_all.innerHTML = language.eng.all;
       m_software.innerHTML = language.eng.software;
@@ -741,6 +744,7 @@
       m_ifsttarDate.innerHTML = language.fr.ifsttarDate;
       m_ifsttarTitle.innerHTML = language.fr.ifsttarTitle;
       m_ifsttarDescription.innerHTML = language.fr.ifsttarDescription;
+      m_hobbies.innerHTML = language.fr.hobbies;
       m_projects.innerHTML = language.fr.projects;
       m_all.innerHTML = language.fr.all;
       m_software.innerHTML = language.fr.software;
