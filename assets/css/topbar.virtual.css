@@ -278,6 +278,47 @@
   background-color: rgba(41, 36, 36, 0.7);
 }
 
+.page-funfact .row .item {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: #292e3b;
+}
+
+.page-funfact .row:last-child .item {
+  border-bottom: 0;
+}
+
+.page-funfact .row .item:first-child {
+  border-left: 0;
+}
+
+.page-funfact .row .item:last-child {
+  border-right: 0;
+}
+
+.page-funfact .img-place {
+  width: 100px;
+  height: 100px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.page-funfact .img-place:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.page-funfact .img-place img {
+  filter: grayscale(100%) brightness(2);
+}
+
+.page-funfact .img-place:hover img {
+  filter: none;
+}
+
 .testi-carousel .item {
   display: block;
   width: 100%;
