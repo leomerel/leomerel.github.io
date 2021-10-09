@@ -50,21 +50,21 @@
         <div class="collapse navbar-collapse" id="main-navbar">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a href="#home" class="nav-link" data-animate="scrolling">Home</a>
+              <a href="#home" class="nav-link" data-animate="scrolling" id="m_home">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#about" class="nav-link" data-animate="scrolling">About</a>
+              <a href="#about" class="nav-link" data-animate="scrolling" id="m_about">About</a>
             </li>
             <li class="nav-item">
-              <a href="#portfolio" class="nav-link" data-animate="scrolling">Portfolio</a>
+              <a href="#portfolio" class="nav-link" data-animate="scrolling" id="m_portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a href="#about" class="nav-link" data-animate="scrolling">Contact</a>
+              <a href="#about" class="nav-link" data-animate="scrolling" id="m_contact">Contact</a>
             </li>
           </ul>
           <ul class="nav ml-auto">
             <li class="nav-item">
-              <button class="btn btn-fab btn-theme no-shadow">En</button>
+              <button class="btn btn-fab btn-theme no-shadow" id="btn_switchLanguage" onclick="changeLanguage()" value="en">Fr</button>
             </li>
           </ul>
         </div>
@@ -73,9 +73,9 @@
 
     <!-- Caption header -->
     <div class="caption-header text-center wow zoomInDown">
-      <h5 class="fw-normal">Welcome</h5>
-      <h1 class="fw-light mb-4">I'm <b class="fg-theme">Léo</b> Mérel</h1>
-      <div class="badge">Computer science student</div>
+      <h5 class="fw-normal" id="m_welcome">Welcome</h5>
+      <h1 class="fw-light mb-4" id="m_im">I'm <b class="fg-theme">Léo</b> Mérel</h1>
+      <div class="badge" id="m_job">Computer science student</div>
     </div> <!-- End Caption header -->
 
     <a href="#about" class="floating-button nav-link"  data-animate="scrolling"><span class="ti-mouse"></span></a>
@@ -91,12 +91,12 @@
         </div>
         <div class="col-lg-6 offset-lg-1 wow fadeInRight">
           <h1 class="fw-light">Léo Mérel</h1>
-          <h5 class="fg-theme mb-3">About me</h5>
-          <p class="text-muted">I'm a computer science student, curious about new technologies and keen to develop new apps. I like to join new teams and help them in their projects. <br/>I'm currently <b>looking for an internship</b> starting on <b>January 2022</b> (5-6 months duration).</p>
+          <h5 class="fg-theme mb-3" id="m_aboutMeTitle">About me</h5>
+          <p class="text-muted" id="m_aboutMe">I'm a computer science student, curious about new technologies and keen to develop new apps. I like to join new teams and help them in their projects. <br/>I'm currently <b>looking for an internship</b> starting on <b>January 2022</b> (5-6 months duration).</p>
           <ul class="theme-list">
-            <li><b>From:</b> Bretagne, France</li>
+            <li id="m_from"><b>From:</b> Bretagne, France</li>
             <li><b>Email:</b> leo.merel@outlook.fr</li>
-            <li><b>Phone number:</b> (+33) 6 38 22 07 98</li>
+            <li id="m_phoneNumber"><b>Phone number:</b> (+33) 6 38 22 07 98</li>
           </ul>
           <a class="btn btn-theme-outline" href="assets/CV_MEREL_Leo.pdf" download="CV_MEREL_Leo" target="_blank">Download CV</a>
         </div>
@@ -439,6 +439,78 @@
           location.reload(true);
       }
   });
+
+  var language = {
+    eng: {
+      home: "Home",
+      about: "About",
+      portfolio: "Portfolio",
+      contact: "Contact",
+      welcome: "Welcome",
+      im: 'I\'m <b class="fg-theme">Léo</b> Mérel',
+      job: "Computer science student",
+      aboutMeTitle: "About me",
+      aboutMe: "I'm a computer science student, curious about new technologies and keen to develop new apps. I like to join new teams and help them in their projects. <br/>I'm currently <b>looking for an internship</b> starting on <b>January 2022</b> (5-6 months duration).",
+      from: "<b>From:</b> Bretagne, France",
+      phoneNumber: "<b>Phone number:</b> (+33) 6 38 22 07 98"
+
+    },
+    fr: {
+      home: "Accueil",
+      about: "Profil",
+      portfolio: "Portfolio",
+      contact: "Contacts",
+      welcome: "Bienvenue sur le portfolio de ",
+      im: '<b class="fg-theme">Léo</b> Mérel',
+      job: "Etudiant ingénieur en informatique",
+      aboutMeTitle: "A propos de moi",
+      aboutMe: "D’un naturel curieux, j’aime découvrir de nouvelles technologies et développer des projets personnels. Je suis rigoureux, volontaire et le travail en équipe est quelque chose que j’apprécie tout particulièrement.<br/><br/>Je suis actuellement à la <b>recherche d'un stage de fin d'études</b>, à partir de <b>Janvier 2022</b> et pour une durée de 5 ou 6 mois.",
+      from: "<b>De:</b> Bretagne, France",
+      phoneNumber: "<b>Téléphone:</b> (+33) 6 38 22 07 98"
+    }
+  };
+
+  function changeLanguage() {
+      var btn = document.getElementById("btn_switchLanguage");
+      if(btn.value=="en") {
+          btn.value="fr";
+          btn.innerHTML = 'Fr';
+          fr();
+      }
+      else if(btn.value=="fr") {
+        btn.value="en";
+        btn.innerHTML = 'En';
+          en();
+      }
+    }
+
+    function en() {
+      m_home.innerHTML = language.eng.home;
+      m_about.innerHTML = language.eng.about;
+      m_portfolio.innerHTML = language.eng.portfolio;
+      m_contact.innerHTML = language.eng.contact;
+      m_welcome.innerHTML = language.eng.welcome;
+      m_im.innerHTML = language.eng.im;
+      m_job.innerHTML = language.eng.job;
+      m_aboutMeTitle.innerHTML = language.eng.aboutMeTitle;
+      m_aboutMe.innerHTML = language.eng.aboutMe;
+      m_from.innerHTML = language.eng.from;
+      m_phoneNumber.innerHTML = language.eng.phoneNumber;
+    }
+
+    function fr() {
+      m_home.innerHTML = language.fr.home;
+      m_about.innerHTML = language.fr.about;
+      m_portfolio.innerHTML = language.fr.portfolio;
+      m_contact.innerHTML = language.fr.contact;
+      m_welcome.innerHTML = language.fr.welcome;
+      m_im.innerHTML = language.fr.im;
+      m_job.innerHTML = language.fr.job;
+      m_aboutMeTitle.innerHTML = language.fr.aboutMeTitle;
+      m_aboutMe.innerHTML = language.fr.aboutMe;
+      m_from.innerHTML = language.fr.from;
+      m_phoneNumber.innerHTML = language.fr.phoneNumber;
+    }
   </script>
 </body>
 </html>
